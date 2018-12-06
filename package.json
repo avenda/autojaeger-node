@@ -1,0 +1,34 @@
+{
+  "name": "autojaeger-node",
+  "version": "0.0.1",
+  "description": "short and simple way to send tracing to jaeger",
+  "main": "index.js",
+  "scripts": {
+    "test": "mocha test/unit --recursive --require babel-polyfill --require babel-register"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/avenda/autojaeger-node.git"
+  },
+  "keywords": [
+    "jaeger",
+    "trace",
+    "tracing",
+    "opentracing"
+  ],
+  "author": "avenda@gmail.com",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/avenda/autojaeger-node/issues"
+  },
+  "homepage": "https://github.com/avenda/autojaeger-node#readme",
+  "devDependencies": {
+    "@babel/cli": "^7.2.0",
+    "@babel/core": "^7.2.0",
+    "@babel/preset-env": "^7.2.0"
+  },
+  "dependencies": {
+    "@babel/polyfill": "^7.0.0",
+    "jaeger-client": "^3.13.0"
+  }
+}
