@@ -4,9 +4,6 @@ node_js:
   - "8"
 before_install:
   - npm i -g npm@5.5.1
-cache:
-  - npm
-  directories:
-    - node_modules
+cache: npm
 install:
   - npm install
