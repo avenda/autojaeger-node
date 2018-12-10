@@ -1,0 +1,11 @@
+{
+  "presets": ["@babel/preset-env"],
+  "env": {
+    "development": {
+      "plugins": ["istanbul", "rewire"]
+    },
+    "test": {
+      "plugins": ["istanbul", "rewire"]
+    }
+  }
+}

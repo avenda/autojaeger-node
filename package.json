@@ -4,7 +4,8 @@
   "description": "short and simple way to send tracing to jaeger",
   "main": "index.js",
   "scripts": {
-    "test": "mocha test/unit --recursive --require babel-polyfill --require babel-register"
+    "test": "mocha test/unit --recursive --require @babel/register",
+    "build": "babel src --out-dir dist --unsafe-perm --copy-files"
   },
   "repository": {
     "type": "git",
@@ -25,7 +26,12 @@
   "devDependencies": {
     "@babel/cli": "^7.2.0",
     "@babel/core": "^7.2.0",
-    "@babel/preset-env": "^7.2.0"
+    "@babel/preset-env": "^7.2.0",
+    "@babel/register": "^7.0.0",
+    "babel-plugin-istanbul": "^5.1.0",
+    "babel-plugin-rewire": "^1.2.0",
+    "chai": "^4.2.0",
+    "mocha": "^5.2.0"
   },
   "dependencies": {
     "@babel/polyfill": "^7.0.0",
