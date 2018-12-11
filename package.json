@@ -4,7 +4,9 @@
   "description": "short and simple way to send tracing to jaeger",
   "main": "index.js",
   "scripts": {
+    "lint": "./node_modules/.bin/eslint ./src/autojaeger.js",
     "test": "mocha test/unit --recursive --require @babel/register",
+    "coverage": "nyc --reporter=html --reporter=text npm run test",
     "build": "babel src --out-dir dist --unsafe-perm --copy-files"
   },
   "repository": {
@@ -31,6 +33,10 @@
     "babel-plugin-istanbul": "^5.1.0",
     "babel-plugin-rewire": "^1.2.0",
     "chai": "^4.2.0",
+    "eslint": "^5.10.0",
+    "eslint-config-airbnb-base": "^13.1.0",
+    "eslint-config-google": "^0.11.0",
+    "eslint-plugin-import": "^2.14.0",
     "mocha": "^5.2.0"
   },
   "dependencies": {
