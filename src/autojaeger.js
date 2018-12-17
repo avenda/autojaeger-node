@@ -1,31 +1,22 @@
 import Instrument from '@risingstack/opentracing-auto';
-import jaeger from 'jaeger-client';
-import UDPSender from 'jaeger-client/dist/src/reporters/udp_sender';
-
+import { initTracer } from 'jaeger-client';
 
 class AutoJaeger {
   constructor(options) {
-    console.log('[AutoJaeger][class] into constructor');
-    this.PORT = 6832;
     this.HOST = 'localhost';
+    this.PORT = 6832;
+    console.log('[AutoJaeger][class] into constructor');
     if (!options.serviceName) { throw new Error('serviceName is required!'); }
     if (options.host) { this.HOST = options.host; }
     if (options.port) { this.PORT = options.port; }
-
-    const sender = new UDPSender(
-      {
-        host: this.HOST,
-        port: this.PORT,
+    const config = {
+      serviceName: options.serviceName,
+      reporter: {
+        collectorEndpoint: 'http://localhost:14268/api/traces',
       },
-    );
+    };
     console.log(`[AutoJaeger][class] UPDSender setting up to: ${this.HOST}:${this.PORT}`);
-    const reporter = new jaeger.RemoteReporter(sender);
-    const sampler = new jaeger.RateLimitingSampler(1);
-    const tracer = new jaeger.Tracer(
-      options.serviceName,
-      reporter,
-      sampler,
-    );
+    const tracer = initTracer(config);
     console.log('[AutoJaeger][class] tracer setup finish');
     this.instrument = new Instrument(
       {

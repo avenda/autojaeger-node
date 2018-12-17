@@ -2,7 +2,7 @@
 
 var cov_zzknrqd21 = function () {
   var path = "/Users/victoravendano/workspace/auto-jaeger-node/src/autojaeger.js",
-      hash = "5e87b6b24990d0896d1a83673ded9deb19f30bc9",
+      hash = "0c6d9f8604d4b5590c18cf1b60e8c52612333abb",
       Function = function () {}.constructor,
       global = new Function('return this')(),
       gcv = "__coverage__",
@@ -10,6 +10,26 @@ var cov_zzknrqd21 = function () {
     path: "/Users/victoravendano/workspace/auto-jaeger-node/src/autojaeger.js",
     statementMap: {
       "0": {
+        start: {
+          line: 6,
+          column: 4
+        },
+        end: {
+          line: 6,
+          column: 28
+        }
+      },
+      "1": {
+        start: {
+          line: 7,
+          column: 4
+        },
+        end: {
+          line: 7,
+          column: 21
+        }
+      },
+      "2": {
         start: {
           line: 8,
           column: 4
@@ -19,163 +39,123 @@ var cov_zzknrqd21 = function () {
           column: 56
         }
       },
-      "1": {
-        start: {
-          line: 9,
-          column: 4
-        },
-        end: {
-          line: 9,
-          column: 21
-        }
-      },
-      "2": {
-        start: {
-          line: 10,
-          column: 4
-        },
-        end: {
-          line: 10,
-          column: 28
-        }
-      },
       "3": {
         start: {
-          line: 11,
+          line: 9,
           column: 4
         },
         end: {
-          line: 11,
+          line: 9,
           column: 78
         }
       },
       "4": {
         start: {
-          line: 11,
+          line: 9,
           column: 32
         },
         end: {
-          line: 11,
+          line: 9,
           column: 76
         }
       },
       "5": {
         start: {
-          line: 12,
+          line: 10,
           column: 4
         },
         end: {
-          line: 12,
+          line: 10,
           column: 51
         }
       },
       "6": {
         start: {
-          line: 12,
+          line: 10,
           column: 24
         },
         end: {
-          line: 12,
+          line: 10,
           column: 49
         }
       },
       "7": {
         start: {
-          line: 13,
+          line: 11,
           column: 4
         },
         end: {
-          line: 13,
+          line: 11,
           column: 51
         }
       },
       "8": {
         start: {
-          line: 13,
+          line: 11,
           column: 24
         },
         end: {
-          line: 13,
+          line: 11,
           column: 49
         }
       },
       "9": {
         start: {
-          line: 15,
+          line: 12,
           column: 19
         },
         end: {
-          line: 20,
+          line: 17,
           column: 5
         }
       },
       "10": {
         start: {
-          line: 21,
+          line: 18,
           column: 4
         },
         end: {
-          line: 21,
+          line: 18,
           column: 90
         }
       },
       "11": {
         start: {
-          line: 22,
-          column: 21
+          line: 19,
+          column: 19
         },
         end: {
-          line: 22,
-          column: 54
+          line: 19,
+          column: 37
         }
       },
       "12": {
         start: {
-          line: 23,
-          column: 20
+          line: 20,
+          column: 4
         },
         end: {
-          line: 23,
-          column: 53
+          line: 20,
+          column: 59
         }
       },
       "13": {
         start: {
-          line: 24,
-          column: 19
+          line: 21,
+          column: 4
         },
         end: {
-          line: 28,
-          column: 5
+          line: 27,
+          column: 6
         }
       },
       "14": {
         start: {
-          line: 29,
+          line: 28,
           column: 4
         },
         end: {
-          line: 29,
-          column: 59
-        }
-      },
-      "15": {
-        start: {
-          line: 30,
-          column: 4
-        },
-        end: {
-          line: 36,
-          column: 6
-        }
-      },
-      "16": {
-        start: {
-          line: 37,
-          column: 4
-        },
-        end: {
-          line: 37,
+          line: 28,
           column: 59
         }
       }
@@ -185,126 +165,126 @@ var cov_zzknrqd21 = function () {
         name: "(anonymous_0)",
         decl: {
           start: {
-            line: 7,
+            line: 5,
             column: 2
           },
           end: {
-            line: 7,
+            line: 5,
             column: 3
           }
         },
         loc: {
           start: {
-            line: 7,
+            line: 5,
             column: 23
           },
           end: {
-            line: 38,
+            line: 29,
             column: 3
           }
         },
-        line: 7
+        line: 5
       }
     },
     branchMap: {
       "0": {
         loc: {
           start: {
-            line: 11,
+            line: 9,
             column: 4
           },
           end: {
-            line: 11,
+            line: 9,
             column: 78
           }
         },
         type: "if",
         locations: [{
           start: {
-            line: 11,
+            line: 9,
             column: 4
           },
           end: {
-            line: 11,
+            line: 9,
             column: 78
           }
         }, {
           start: {
-            line: 11,
+            line: 9,
             column: 4
           },
           end: {
-            line: 11,
+            line: 9,
             column: 78
           }
         }],
-        line: 11
+        line: 9
       },
       "1": {
         loc: {
           start: {
-            line: 12,
+            line: 10,
             column: 4
           },
           end: {
-            line: 12,
+            line: 10,
             column: 51
           }
         },
         type: "if",
         locations: [{
           start: {
-            line: 12,
+            line: 10,
             column: 4
           },
           end: {
-            line: 12,
+            line: 10,
             column: 51
           }
         }, {
           start: {
-            line: 12,
+            line: 10,
             column: 4
           },
           end: {
-            line: 12,
+            line: 10,
             column: 51
           }
         }],
-        line: 12
+        line: 10
       },
       "2": {
         loc: {
           start: {
-            line: 13,
+            line: 11,
             column: 4
           },
           end: {
-            line: 13,
+            line: 11,
             column: 51
           }
         },
         type: "if",
         locations: [{
           start: {
-            line: 13,
+            line: 11,
             column: 4
           },
           end: {
-            line: 13,
+            line: 11,
             column: 51
           }
         }, {
           start: {
-            line: 13,
+            line: 11,
             column: 4
           },
           end: {
-            line: 13,
+            line: 11,
             column: 51
           }
         }],
-        line: 13
+        line: 11
       }
     },
     s: {
@@ -322,9 +302,7 @@ var cov_zzknrqd21 = function () {
       "11": 0,
       "12": 0,
       "13": 0,
-      "14": 0,
-      "15": 0,
-      "16": 0
+      "14": 0
     },
     f: {
       "0": 0
@@ -353,9 +331,7 @@ exports.default = void 0;
 
 var _opentracingAuto = _interopRequireDefault(require("@risingstack/opentracing-auto"));
 
-var _jaegerClient = _interopRequireDefault(require("jaeger-client"));
-
-var _udp_sender = _interopRequireDefault(require("jaeger-client/dist/src/reporters/udp_sender"));
+var _jaegerClient = require("jaeger-client");
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
@@ -366,11 +342,11 @@ var AutoJaeger = function AutoJaeger(options) {
 
   cov_zzknrqd21.f[0]++;
   cov_zzknrqd21.s[0]++;
-  console.log('[AutoJaeger][class] into constructor');
+  this.HOST = 'localhost';
   cov_zzknrqd21.s[1]++;
   this.PORT = 6832;
   cov_zzknrqd21.s[2]++;
-  this.HOST = 'localhost';
+  console.log('[AutoJaeger][class] into constructor');
   cov_zzknrqd21.s[3]++;
 
   if (!options.serviceName) {
@@ -401,22 +377,22 @@ var AutoJaeger = function AutoJaeger(options) {
     cov_zzknrqd21.b[2][1]++;
   }
 
-  var sender = (cov_zzknrqd21.s[9]++, new _udp_sender.default({
-    host: this.HOST,
-    port: this.PORT
-  }));
+  var config = (cov_zzknrqd21.s[9]++, {
+    serviceName: options.serviceName,
+    reporter: {
+      collectorEndpoint: 'http://localhost:14268/api/traces'
+    }
+  });
   cov_zzknrqd21.s[10]++;
   console.log("[AutoJaeger][class] UPDSender setting up to: ".concat(this.HOST, ":").concat(this.PORT));
-  var reporter = (cov_zzknrqd21.s[11]++, new _jaegerClient.default.RemoteReporter(sender));
-  var sampler = (cov_zzknrqd21.s[12]++, new _jaegerClient.default.RateLimitingSampler(1));
-  var tracer = (cov_zzknrqd21.s[13]++, new _jaegerClient.default.Tracer(options.serviceName, reporter, sampler));
-  cov_zzknrqd21.s[14]++;
+  var tracer = (cov_zzknrqd21.s[11]++, (0, _jaegerClient.initTracer)(config));
+  cov_zzknrqd21.s[12]++;
   console.log('[AutoJaeger][class] tracer setup finish');
-  cov_zzknrqd21.s[15]++;
+  cov_zzknrqd21.s[13]++;
   this.instrument = new _opentracingAuto.default({
     tracers: [tracer]
   });
-  cov_zzknrqd21.s[16]++;
+  cov_zzknrqd21.s[14]++;
   console.log('[AutoJaeger][class] tracer instrumented');
 };
 
