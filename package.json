@@ -7,7 +7,7 @@
     "lint": "./node_modules/.bin/eslint ./src/autojaeger.js",
     "test": "mocha test/unit --recursive --require @babel/register --exit",
     "coverage": "nyc --reporter=html --reporter=text npm run test",
-    "build": "babel src example --out-dir dist --unsafe-perm --copy-files"
+    "build": "node src"
   },
   "repository": {
     "type": "git",

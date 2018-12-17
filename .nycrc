@@ -1,0 +1,14 @@
+{
+  "reporter": [
+    "lcov",
+    "text"
+  ],
+  "require": [
+    "@babel/register"
+  ],
+  "include": ["src"],
+  "exclude": ["example", "coverage", "analysis"],
+  "all": true,
+  "sourceMap": false,
+  "instrument": false
+}

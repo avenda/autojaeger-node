@@ -1,7 +1,7 @@
-import { expect } from 'chai';
-import sinon from 'sinon';
-import jaeger from 'jaeger-client';
-import AutoJaeger from '../../src/autojaeger';
+const { expect } = require('chai');
+const sinon = require('sinon');
+const jaeger = require('jaeger-client');
+const AutoJaeger = require('../../src/autojaeger');
 
 
 describe('AutoJaeger Tests', () => {
@@ -12,19 +12,15 @@ describe('AutoJaeger Tests', () => {
       new AutoJaeger(
         {
           serviceName: 'dummy-service-name',
-          sampler: 'dummy-sampler-id',
         },
       ),
     )
       .to.be.an.instanceof(AutoJaeger);
   });
 
-  it('should an get error by given a empty serviceName', () => {
-    expect(() => {
-      /* eslint-disable no-new */
-      new AutoJaeger({
-        sampler: 'dummy-sampler-id',
-      });
-    }).to.throw();
+  it('should throw exception', () => {
+    /* eslint-disable no-new */
+    expect(() => { new AutoJaeger(); })
+      .to.throw();
   });
 });
