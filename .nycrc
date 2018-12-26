@@ -7,7 +7,7 @@
     "@babel/register"
   ],
   "include": ["src"],
-  "exclude": ["example", "coverage", "analysis"],
+  "exclude": ["example", "coverage"],
   "all": true,
   "sourceMap": false,
   "instrument": false
